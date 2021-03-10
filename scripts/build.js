@@ -58,7 +58,7 @@ function run(cmd, options) {
 function getPackages(packagePattern, tsOnly = false) {
   let pattern = packagePattern;
   if (pattern === '*' && !tsOnly) {
-    return `@superset-ui/!(${[...META_PACKAGES].join('|')})`;
+    return `{@superset-ui/!(${[...META_PACKAGES].join('|')}),@ecqq/*}`;
   }
   if (!pattern.includes('*')) {
     pattern = `*${pattern}`;
@@ -75,13 +75,27 @@ function getPackages(packagePattern, tsOnly = false) {
         .filter(x => !META_PACKAGES.has(x)),
     ),
   ];
+
+  const ecqqPackages = [
+    ...new Set(
+      fastGlob
+        .sync([
+          `./node_modules/@ecqq/${pattern}/src/**/*.${tsOnly ? '{ts,tsx}' : '{ts,tsx,js,jsx}'}`,
+        ])
+        .map(x => x.split('/')[3])
+        .filter(x => !META_PACKAGES.has(x)),
+    ),
+  ];
   if (packages.length === 0) {
     throw new Error('No matching packages');
   }
-  return `@superset-ui/${packages.length > 1 ? `{${packages.join(',')}}` : packages[0]}`;
+  return `{@superset-ui/${packages.length > 1 ? `{${packages.join(',')}}` : packages[0]},@ecqq/${
+    ecqqPackages.length > 1 ? `{${ecqqPackages.join(',')}}` : ecqqPackages[0]
+  }}`;
 }
 
 let scope = getPackages(glob);
+console.log('scope 2', scope);
 
 if (shouldLint) {
   run(`yarn lint --fix {packages,plugins}/${scope}/{src,test}`);
@@ -111,6 +125,7 @@ if (shouldRunBabel) {
 if (shouldRunTyping) {
   // only run tsc for packages with ts files
   scope = getPackages(glob, true);
+  console.log('scope 2', scope);
   run(`lerna exec --stream --concurrency 3 --scope ${scope} \
        -- ../../scripts/tsc.sh --build`);
 }

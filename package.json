@@ -1,7 +1,7 @@
 {
-  "name": "@superset-ui/monorepo",
+  "name": "@ecqq/monorepo",
   "version": "0.0.0",
-  "description": "Superset UI",
+  "description": "Superset UI for ecqq",
   "private": true,
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -38,7 +38,7 @@
     "ci:release-from-tag": "yarn clean-npm-lock && lerna publish from-package --yes",
     "ci:release-conventional": "yarn clean-npm-lock && lerna publish --conventional-commits --create-release github --yes"
   },
-  "repository": "https://github.com/apache-superset/superset-ui.git",
+  "repository": "https://github.com/ECQQ/superset-ui-plguins.git",
   "keywords": [
     "apache",
     "superset",

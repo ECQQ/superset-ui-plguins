@@ -4366,6 +4366,17 @@
     prop-types "^15.6.2"
     react "^16.13.1"
 
+"@superset-ui/legacy-plugin-chart-country-map@0.17.16":
+  version "0.17.16"
+  resolved "https://registry.yarnpkg.com/@superset-ui/legacy-plugin-chart-country-map/-/legacy-plugin-chart-country-map-0.17.16.tgz#daf300b1e990ec474de6f1f22dcc6a5d327a8e7a"
+  integrity sha512-ooAxeueDpxnlaNPO/KfvltQzEFB9JaiBZhcnvIM5ofMH+VyXY7YfuvWKNjtisxgBcq1UxahW0hYaQVQv8E5IQw==
+  dependencies:
+    "@superset-ui/chart-controls" "0.17.16"
+    "@superset-ui/core" "0.17.15"
+    d3 "^3.5.17"
+    d3-array "^2.0.3"
+    prop-types "^15.6.2"
+
 "@superset-ui/legacy-plugin-chart-event-flow@0.17.16":
   version "0.17.16"
   resolved "https://registry.yarnpkg.com/@superset-ui/legacy-plugin-chart-event-flow/-/legacy-plugin-chart-event-flow-0.17.16.tgz#2e2bd1fc32fb4c41ca0213cd0fa8282021075b00"
