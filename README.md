@@ -1,18 +1,16 @@
-# @superset-ui
+# @superset-ui ecqq plugins
 
 [![Codecov branch](https://img.shields.io/codecov/c/github/apache-superset/superset-ui/master.svg?style=flat-square)](https://codecov.io/gh/apache-superset/superset-ui/branch/master)
 [![Build Status](https://img.shields.io/travis/com/apache-superset/superset-ui/master.svg?style=flat-square)](https://travis-ci.com/apache-superset/superset-ui)
 [![David](https://img.shields.io/david/dev/apache-superset/superset-ui.svg?style=flat-square)](https://david-dm.org/apache-superset/superset-ui?type=dev)
 
 Collection of packages that power the
-[Apache Superset](https://github.com/apache/incubator-superset) UI, and can be used to craft custom
+[Apache Superset ECQQ](https://github.com/ECQQ/visualizacion) UI, and can be used to craft custom
 data applications that leverage a Superset backend :chart_with_upwards_trend:
 
 ## Demo
 
-Most recent release: https://apache-superset.github.io/superset-ui/
-
-Current master: https://superset-ui.now.sh/
+Most recent release: http://35.243.251.30:8088/
 
 ## Packages
 
@@ -33,42 +31,94 @@ packages are extracted with minimal changes (almost as-is). They also depend on 
 
 | Package                                                                                                                                                              | Version                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [@superset-ui/legacy-preset-chart-big-number](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-preset-chart-big-number)                     | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-preset-chart-big-number.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-preset-chart-big-number)                     |
-| [@superset-ui/legacy-preset-chart-nvd3](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-preset-chart-nvd3)                                 | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-preset-chart-nvd3.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-preset-chart-nvd3)                                 |
-| [@superset-ui/legacy-plugin-chart-calendar](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-calendar)                         | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-calendar.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-calendar)                         |
-| [@superset-ui/legacy-plugin-chart-chord](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-chord)                               | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-chord.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-chord)                               |
-| [@superset-ui/legacy-plugin-chart-country-map](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-country-map)                   | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-country-map.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-country-map)                   |
-| [@superset-ui/legacy-plugin-chart-event-flow](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-event-flow)                     | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-event-flow.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-event-flow)                     |
-| [@superset-ui/legacy-plugin-chart-force-directed](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-force-directed)             | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-force-directed.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-force-directed)             |
-| [@superset-ui/legacy-plugin-chart-heatmap](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-heatmap)                           | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-heatmap.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-heatmap)                           |
-| [@superset-ui/legacy-plugin-chart-histogram](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-histogram)                       | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-histogram.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-histogram)                       |
-| [@superset-ui/legacy-plugin-chart-horizon](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-horizon)                           | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-horizon.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-horizon)                           |
-| [@superset-ui/legacy-plugin-chart-iframe](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-iframe)                             | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-iframe.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-iframe)                             |
-| [@superset-ui/legacy-plugin-chart-markup](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-markup)                             | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-markup.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-markup)                             |
-| [@superset-ui/legacy-plugin-chart-map-box](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-map-box)                           | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-map-box.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-map-box)                           |
-| [@superset-ui/legacy-plugin-chart-paired-t-test](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-paired-t-test)               | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-paired-t-test.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-paired-t-test)               |
-| [@superset-ui/legacy-plugin-chart-parallel-coordinates](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-parallel-coordinates) | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-parallel-coordinates.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-parallel-coordinates) |
-| [@superset-ui/legacy-plugin-chart-partition](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-partition)                       | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-partition.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-partition)                       |
-| [@superset-ui/legacy-plugin-chart-pivot-table](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-pivot-table)                   | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-pivot-table.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-pivot-table)                   |
-| [@superset-ui/legacy-plugin-chart-rose](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-rose)                                 | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-rose.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-rose)                                 |
-| [@superset-ui/legacy-plugin-chart-sankey](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-sankey)                             | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-sankey.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-sankey)                             |
-| [@superset-ui/legacy-plugin-chart-sankey-loop](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-sankey-loop)                   | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-sankey-loop.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-sankey-loop)                   |
-| [@superset-ui/legacy-plugin-chart-sunburst](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-sunburst)                         | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-sunburst.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-sunburst)                         |
-| [@superset-ui/legacy-plugin-chart-treemap](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-treemap)                           | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-treemap.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-treemap)                           |
-| [@superset-ui/legacy-plugin-chart-world-map](https://github.com/apache-superset/superset-ui/tree/master/plugins/legacy-plugin-chart-world-map)                       | [![Version](https://img.shields.io/npm/v/@superset-ui/legacy-plugin-chart-world-map.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/legacy-plugin-chart-world-map)                       |
+| [@eccq/legacy-plugin-chart-chord](https://github.com/ECQQ/superset-ui-plguins/tree/main/plugins/legacy-plugin-chart-chord)                               | [![Version](https://img.shields.io/npm/v/@ecqq/legacy-plugin-chart-chord.svg?style=flat-square)](https://www.npmjs.com/package/@ecqq/legacy-plugin-chart-chord)                               |
+| [@ecqq/legacy-plugin-chart-country-map](https://github.com/ECQQ/superset-ui-plguins/tree/main/plugins/legacy-plugin-chart-country-map)                   | [![Version](https://img.shields.io/npm/v/@ecqq/legacy-plugin-chart-country-map.svg?style=flat-square)](https://www.npmjs.com/package/@ecqq/legacy-plugin-chart-country-map)                   |
 
-`@superset-ui/plugin-*` packages are newer and higher quality in general. A key difference that they
-do not depend on `viz.py` (which contain visualization-specific python code) and interface with
-`/api/v1/query/`, a new generic endpoint instead meant to serve all visualizations, instead. Also
-should be written in Typescript.
+## Build plugins
 
-| Package                                                                                                                            | Version                                                                                                                                                                   | Note |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| [@superset-ui/plugin-chart-word-cloud](https://github.com/apache-superset/superset-ui/tree/master/plugins/plugin-chart-word-cloud) | [![Version](https://img.shields.io/npm/v/@superset-ui/plugin-chart-word-cloud.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/plugin-chart-word-cloud) |      |
-| [@superset-ui/plugin-chart-table](https://github.com/apache-superset/superset-ui/tree/master/plugins/plugin-chart-table)           | [![Version](https://img.shields.io/npm/v/@superset-ui/plugin-chart-table.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/plugin-chart-table)           |      |
-| [@superset-ui/preset-chart-xy](https://github.com/apache-superset/superset-ui/tree/master/plugins/preset-chart-xy)                 | [![Version](https://img.shields.io/npm/v/@superset-ui/preset-chart-xy.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/preset-chart-xy)                 |      |
-| [@superset-ui/plugin-chart-echarts](https://github.com/apache-superset/superset-ui/tree/master/plugins/plugin-chart-echarts)       | [![Version](https://img.shields.io/npm/v/@superset-ui/plugin-chart-echarts.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/plugin-chart-echarts)       |      |
-| [@superset-ui/plugin-filter-antd](https://github.com/apache-superset/superset-ui/tree/master/plugins/plugin-filter-antd)           | [![Version](https://img.shields.io/npm/v/@superset-ui/plugin-chart-echarts.svg?style=flat-square)](https://www.npmjs.com/package/@superset-ui/plugin-filter-antd)         |      |
+### NPM version
+
+These plugins requiere npm version v14.16.0, to install we recomend Node Version Manager (nvm)
+
+#### Installing NVM
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+#### Installing Node
+
+List of node versions available
+
+```
+nvm ls-remote
+```
+
+Install version v14
+
+```
+nvm install v14.16.0
+```
+
+Set the version as default
+
+```
+nvm alias default v14.16.0
+```
+
+Set this version as the new version
+
+```
+nvm use v14.16.0
+```
+
+#### Installing yarn and lerna using npm
+
+Run these command to installed these packages in order to build the plugins
+
+```
+npm install yarn lerna -g
+```
+
+#### Building the plugins 
+
+##### Bootstrap Project
+
+To link all the package together and install all dependencies
+
+```
+lerna bootstrap
+```
+
+This command will:
+
+- Install all external dependencies
+- Symlink together all the Lerna packages that are dependencies of each other.
+- Run prepublish in all bootstrapped packages.
+
+##### Building the plugins
+
+To build the plugins in order tu upload them to the npm registry, we need to run two scripts, one for building the actual code and other to copy the assets to used in the plugins
+
+```
+yarn build && yarn build:assets
+```
+
+#### Publishing the plugins
+
+In order to publish the plugins, we have to login to our npmjs.com account
+
+```
+npm login
+```
+
+Then, we simply use the publish comand
+
+```
+npm publish
+```
+
+If the version we are trying to publish already exists, we have to change the current version in the package.json file of the plugin directory
 
 ## Contribution and development guide
 
