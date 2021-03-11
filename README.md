@@ -1,9 +1,5 @@
 # @superset-ui ecqq plugins
 
-[![Codecov branch](https://img.shields.io/codecov/c/github/apache-superset/superset-ui/master.svg?style=flat-square)](https://codecov.io/gh/apache-superset/superset-ui/branch/master)
-[![Build Status](https://img.shields.io/travis/com/apache-superset/superset-ui/master.svg?style=flat-square)](https://travis-ci.com/apache-superset/superset-ui)
-[![David](https://img.shields.io/david/dev/apache-superset/superset-ui.svg?style=flat-square)](https://david-dm.org/apache-superset/superset-ui?type=dev)
-
 Collection of packages that power the
 [Apache Superset ECQQ](https://github.com/ECQQ/visualizacion) UI, and can be used to craft custom
 data applications that leverage a Superset backend :chart_with_upwards_trend:
@@ -32,7 +28,7 @@ packages are extracted with minimal changes (almost as-is). They also depend on 
 | Package                                                                                                                                                              | Version                                                                                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [@eccq/legacy-plugin-chart-chord](https://github.com/ECQQ/superset-ui-plguins/tree/main/plugins/legacy-plugin-chart-chord)                               | [![Version](https://img.shields.io/npm/v/@ecqq/legacy-plugin-chart-chord.svg?style=flat-square)](https://www.npmjs.com/package/@ecqq/legacy-plugin-chart-chord)                               |
-| [@ecqq/legacy-plugin-chart-country-map](https://github.com/ECQQ/superset-ui-plguins/tree/main/plugins/legacy-plugin-chart-country-map)                   | [![Version](https://img.shields.io/npm/v/@ecqq/legacy-plugin-chart-country-map.svg?style=flat-square)](https://www.npmjs.com/package/@ecqq/legacy-plugin-chart-country-map)                   |
+| [@ecqq/legacy-plugin-chart-country-map](https://github.com/ECQQ/superset-ui-plguins/tree/main/plugins/legacy-plugin-chart-country-map)                   | [![Version](https://img.shields.io/npm/v/@ecqq/legacy-plugin-chart-country-map-chile.svg?style=flat-square)](https://www.npmjs.com/package/@ecqq/legacy-plugin-chart-country-map-chile)                   |
 
 ## Build plugins
 
