@@ -22,17 +22,17 @@ import thumbnail from './images/thumbnail.png';
 import controlPanel from './controlPanel';
 
 const metadata = new ChartMetadata({
-  credits: ['https://github.com/d3/d3-chord'],
+  credits: ['https://github.com/visjs/vis-network'],
   description: '',
-  name: t('Chord Diagram'),
+  name: t('Word Graph Diagram'),
   thumbnail,
   useLegacyApi: true,
 });
 
-export default class ChordChartPlugin extends ChartPlugin {
+export default class WordGraphChartPlugin extends ChartPlugin {
   constructor() {
     super({
-      loadChart: () => import('./ReactChord'),
+      loadChart: () => import('./ReactWordGraph'),
       metadata,
       transformProps,
       controlPanel,

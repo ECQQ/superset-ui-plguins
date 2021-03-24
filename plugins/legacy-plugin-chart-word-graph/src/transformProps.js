@@ -18,13 +18,12 @@
  */
 export default function transformProps(chartProps) {
   const { width, height, formData, queriesData } = chartProps;
-  const { yAxisFormat, colorScheme } = formData;
+  const { colorScheme } = formData;
 
   return {
     colorScheme,
     data: queriesData[0].data,
     height,
-    numberFormat: yAxisFormat,
     width,
   };
 }

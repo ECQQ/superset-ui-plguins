@@ -19,38 +19,39 @@
 import React from 'react';
 import { reactify, styled } from '@superset-ui/core';
 import PropTypes from 'prop-types';
-import Component from './Chord';
+import Component from './WordGraph';
 
 const ReactComponent = reactify(Component);
 
-const Chord = ({ className, ...otherProps }) => (
+const WordGraph = ({ className, ...otherProps }) => (
   <div className={className}>
     <ReactComponent {...otherProps} />
   </div>
 );
 
-Chord.defaultProps = {
-  otherProps: {},
-};
-
-Chord.propTypes = {
+WordGraph.propTypes = {
   className: PropTypes.string.isRequired,
   otherProps: PropTypes.objectOf(PropTypes.any),
 };
 
-export default styled(Chord)`
-  .superset-legacy-chart-chord svg #circle circle {
-    fill: none;
-    pointer-events: all;
-  }
-  .superset-legacy-chart-chord svg .group path {
-    fill-opacity: 0.6;
-  }
-  .superset-legacy-chart-chord svg path.chord {
-    stroke: #000;
-    stroke-width: 0.25px;
-  }
-  .superset-legacy-chart-chord svg #circle:hover path.fade {
-    opacity: 0.2;
+export default styled(WordGraph)`
+  .superset-legacy-word-graph {
+    path.link {
+      fill: none;
+      stroke: #000;
+      stroke-width: 1.5px;
+    }
+    circle {
+      fill: #ccc;
+      stroke: #000;
+      stroke-width: 1.5px;
+      stroke-opacity: 1;
+      opacity: 0.75;
+    }
+    text {
+      fill: #000;
+      font: 10px sans-serif;
+      pointer-events: none;
+    }
   }
 `;
