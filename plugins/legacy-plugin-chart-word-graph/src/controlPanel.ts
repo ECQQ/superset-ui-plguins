@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-import { t, validateNonEmpty } from '@superset-ui/core';
+import { t } from '@superset-ui/core';
 import { ControlPanelConfig, sections } from '@superset-ui/chart-controls';
 
 const config: ControlPanelConfig = {
@@ -27,7 +27,6 @@ const config: ControlPanelConfig = {
       expanded: true,
       controlSetRows: [
         ['groupby'],
-        ['columns'],
         ['metric'],
         ['adhoc_filters'],
         ['row_limit'],
@@ -46,28 +45,13 @@ const config: ControlPanelConfig = {
     {
       label: t('Chart Options'),
       expanded: true,
-      controlSetRows: [
-        ['y_axis_format', null],
-        ['color_scheme', 'label_colors'],
-      ],
+      controlSetRows: [['color_scheme', 'label_colors']],
     },
   ],
   controlOverrides: {
-    y_axis_format: {
-      label: t('Number format'),
-      description: t('Choose a number format'),
-    },
     groupby: {
-      label: t('Source'),
-      multi: false,
-      validators: [validateNonEmpty],
-      description: t('Choose a source'),
-    },
-    columns: {
-      label: t('Target'),
-      multi: false,
-      validators: [validateNonEmpty],
-      description: t('Choose a target'),
+      label: t('Source / Target'),
+      description: t('Choose a source and a target'),
     },
   },
 };

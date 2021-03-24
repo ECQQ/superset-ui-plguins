@@ -86,6 +86,7 @@ function getPackages(packagePattern, tsOnly = false) {
         .filter(x => !META_PACKAGES.has(x)),
     ),
   ];
+  console.log(ecqqPackages);
   if (packages.length === 0) {
     throw new Error('No matching packages');
   }
@@ -124,6 +125,8 @@ if (shouldRunBabel) {
 
 if (shouldRunTyping) {
   // only run tsc for packages with ts files
+
+  console.log('glob :', glob);
   scope = getPackages(glob, true);
   console.log('scope 2', scope);
   run(`lerna exec --stream --concurrency 3 --scope ${scope} \

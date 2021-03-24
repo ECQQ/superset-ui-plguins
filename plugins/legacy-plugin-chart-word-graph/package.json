@@ -1,7 +1,7 @@
 {
-  "name": "@ecqq/legacy-plugin-chart-chord",
+  "name": "@ecqq/legacy-plugin-chart-word-graph",
   "version": "0.17.18",
-  "description": "Superset Legacy Chart - Chord Diagram",
+  "description": "Superset Chart - Word Graph",
   "sideEffects": [
     "*.css"
   ],
@@ -30,8 +30,11 @@
   "dependencies": {
     "@superset-ui/chart-controls": "0.17.18",
     "@superset-ui/core": "0.17.18",
-    "d3": "^3.5.17",
+    "vis-network": "9.0.4",
+    "vis-data": "^7.0.0",
+    "vis-util": "^5.0.1",
     "prop-types": "^15.6.2",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "d3": "^3.5.17"
   }
 }
