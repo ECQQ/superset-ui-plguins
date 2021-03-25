@@ -1,6 +1,6 @@
 {
   "name": "@ecqq/legacy-plugin-chart-word-graph",
-  "version": "0.17.18",
+  "version": "0.17.19",
   "description": "Superset Chart - Word Graph",
   "sideEffects": [
     "*.css"
@@ -28,7 +28,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@superset-ui/chart-controls": "0.17.18",
+    "@superset-ui/chart-controls": "0.17.19",
     "@superset-ui/core": "0.17.18",
     "vis-network": "9.0.4",
     "vis-data": "^7.0.0",

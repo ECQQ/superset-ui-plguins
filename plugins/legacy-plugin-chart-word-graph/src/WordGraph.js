@@ -37,42 +37,65 @@ const propTypes = {
 function WordGraph(element, props) {
   const { data, width, height, colorScheme } = props;
 
-  element.className = 'superset-legacy-word-graph';
+  element.className = `${element.className} superset-legacy-word-graph`;
 
   const colorFn = CategoricalColorNamespace.getScale(colorScheme);
 
   // nodes
-  const nodeDict = new Map();
+  const nodeMap = new Map();
   let k = 1;
 
   data.forEach(link => {
-    if (!nodeDict.has(link.source)) {
-      nodeDict.set(link.source, k);
+    if (!nodeMap.has(link.source)) {
+      nodeMap.set(link.source, { id: k, value: 0, color: colorFn(k) });
       k += 1;
     }
 
-    if (!nodeDict.has(link.target)) {
-      nodeDict.set(link.target, k);
+    if (!nodeMap.has(link.target)) {
+      nodeMap.set(link.target, { id: k, value: 0, color: colorFn(k) });
       k += 1;
     }
-  });
-
-  const nodes = [];
-  nodeDict.forEach((value, key) => {
-    nodes.push({ id: value, value: 1, label: key, color: colorFn(key) });
   });
 
   // edges
+  const edgeSet = new Set();
   const edges = [];
   let title;
+  let counterTitle;
+  let sourceNode;
+  let targetNode;
+
   data.forEach(link => {
+    sourceNode = nodeMap.get(link.source);
+    targetNode = nodeMap.get(link.target);
+
+    sourceNode.value += link.value;
+    targetNode.value += link.value;
+
     title = `${link.source} ${link.target}`;
+
+    if (edgeSet.has(title)) return;
+
+    counterTitle = `${link.target} ${link.source}`;
+    edgeSet.add(title);
+    edgeSet.add(counterTitle);
+
     edges.push({
-      from: nodeDict.get(link.source),
-      to: nodeDict.get(link.target),
+      from: sourceNode.id,
+      to: targetNode.id,
       value: link.value,
       title,
-      color: colorFn(title),
+      color: sourceNode.color,
+    });
+  });
+
+  const nodes = [];
+  nodeMap.forEach((node, key) => {
+    nodes.push({
+      id: node.id,
+      value: node.value,
+      label: key,
+      color: node.color,
     });
   });
 
