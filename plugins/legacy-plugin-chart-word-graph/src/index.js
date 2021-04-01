@@ -32,10 +32,10 @@ const metadata = new ChartMetadata({
 export default class WordGraphChartPlugin extends ChartPlugin {
   constructor() {
     super({
+      controlPanel,
       loadChart: () => import('./ReactWordGraph'),
       metadata,
       transformProps,
-      controlPanel,
     });
   }
 }
