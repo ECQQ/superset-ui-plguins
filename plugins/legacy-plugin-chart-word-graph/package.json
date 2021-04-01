@@ -1,6 +1,6 @@
 {
   "name": "@ecqq/legacy-plugin-chart-word-graph",
-  "version": "0.17.20",
+  "version": "0.17.21",
   "description": "Superset Chart - Word Graph",
   "sideEffects": [
     "*.css"
